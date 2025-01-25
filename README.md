@@ -7,5 +7,12 @@ This system is fault tolerant and the users can test failing the links between s
 
 This is an exercise in communication protocols and distributed systems and is not meant to be a user facing app, but I might try to refactor it into one some day!
 
+# Run in terminal
+Go to backend folder
+Run ./dev.sh
+
+# Run locally
+Run uvicorn app.main:app --reload in backend folder
+Run npm run dev in frontend folder
 
 ![ui test](uitest.png)
