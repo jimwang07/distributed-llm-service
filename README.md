@@ -6,4 +6,6 @@ Each user can manage 3 clients at a time that each query their own LLM API and s
 This system is fault tolerant and the users can test failing the links between servers. When a failed server comes back online, it can recover the existing context through multipaxos messages from other servers.
 
 This is an exercise in communication protocols and distributed systems and is not meant to be a user facing app, but I might try to refactor it into one some day!
+
+
 ![ui test](uitest.png)
