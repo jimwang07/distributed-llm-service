@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4b4ac370-cc66-4e6d-a181-bfca83636fe7)# distributed-llm-service
+# distributed-llm-service
 High level overview: Distributed AI chat system where the user can query three different AI chat servers, choose the best answer, and have the conversation context saved across all three servers using socket programming and a communication protocol called Multi Paxos.
 
 Each user can manage 3 clients at a time that each query their own LLM API and share contexts by communicating with TCP socket programming. 
