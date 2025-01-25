@@ -1,8 +1,8 @@
 # distributed-llm-service
-Fault-tolerant distributed LLM service with Next.js frontend
+High level overview: Distributed AI chat system where the user can query three different AI chat servers, choose the best answer, and have the conversation context saved across all three servers using socket programming and a communication protocol called Multi Paxos.
 
-A passion project of mine that I've wanted to create for a long time.
+Each user can manage 3 clients at a time that each query their own LLM API and share contexts by communicating with TCP socket programming. 
 
-Getting the best answer to a question often involves prompting multiple AI chat bots and comparing answer quality. However, this approach isn't efficient with continuous chats with longer contexts.
+This system is fault tolerant and the users can test failing the links between servers. When a failed server comes back online, it can recover the existing context through multipaxos messages from other servers.
 
-This project aims to solve this issue by allowing users to prompt multiple chat bots and guaranteeing that they have the same contexts using a multi-paxos consensus protocol. Each user can manage 3 clients at a time that each query their own LLM api and share contexts by communicating with TCP socket programming.
+This is an exercise in communication protocols and distributed systems and is not meant to be a user facing app, but I might try to refactor it into one some day!
