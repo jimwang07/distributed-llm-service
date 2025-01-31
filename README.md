@@ -7,9 +7,12 @@ This system is fault tolerant and the users can test failing the links between s
 
 This is an exercise in communication protocols and distributed systems and is not meant to be a user facing app, but I might try to refactor it into one some day!
 
-Usage:
+Basic Usage:
+
 "create [context name]" to create a new context
+
 "query [context name] [prompt]" to make a query to a certain context.
+
 "choose [context name] [number]" to choose the answer from server [number]
 
 # Run in terminal
