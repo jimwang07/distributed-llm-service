@@ -23,7 +23,7 @@ Run ./dev.sh
 ![term](term.png)
 
 
-# Run frontend/backend locally (Under Testing)
+# Run frontend/backend locally (under testing)
 Run uvicorn app.main:app --reload in backend folder
 Run npm run dev in frontend folder
 
