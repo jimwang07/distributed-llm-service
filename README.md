@@ -6,6 +6,8 @@ Users can query three different AI chat servers, choose the best answer, and hav
 This system is fault tolerant and the users can test failing the links between servers. When a failed server comes back online, it can recover the existing context through multipaxos messages from other servers.
 
 This is an exercise in communication protocols and distributed systems and an expansion of a school project.
+
+
 Basic Usage:
 
 "create [context name]" to create a new context
